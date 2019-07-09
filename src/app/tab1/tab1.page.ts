@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
+import { DatePicker } from '@ionic-native/date-picker/ngx';
 
 
 
@@ -14,15 +15,21 @@ import { MenuController } from '@ionic/angular';
 })
 export class Tab1Page {
   today;
-
-  constructor(public actionSheetController: ActionSheetController , private menu: MenuController) {
+  newDate;
+  constructor(public actionSheetController: ActionSheetController , private menu: MenuController , private datePicker: DatePicker) {
     this.today = new Date().toISOString();
+     console.log('today ' , this.today);
   }
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
-
+  
+  slidePrev() {
+    this.today --;
+    console.log('prev Date' , this.today)
+  }
+ 
   async presentActionSheet(event: Event) {
     const actionSheet = await this.actionSheetController.create({
     
@@ -61,4 +68,29 @@ export class Tab1Page {
     await actionSheet.present();
     
   }
+
+
+  showDatePicker(){
+    this.datePicker.show({
+    date: new Date(),
+    mode: 'date',
+    androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+    }).then(
+    date => console.log('Got date: ', date),
+    err => console.log('Error occurred while getting date: ', err)
+    );
+    }
+    showCalendar() {
+
+      this.datePicker.show({
+        date: new Date(),
+        mode: 'date',
+        titleText: 'set Date',
+        androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
+      }).then(
+        date => console.log('Got date: ', date),
+        err => console.log('Error occurred while getting date: ', err)
+      );
+    
+    }
 }

@@ -1,11 +1,11 @@
-span
-{
-  font-family: Roboto-italic !important;
-}
-div
-{
-  font-family: Roboto-italic !important;
-}
+// span
+// {
+//   font-family: Roboto-italic !important;
+// }
+// div
+// {
+//   font-family: Roboto-italic !important;
+// }
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
@@ -32,12 +32,30 @@ div
 .card {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
+  
+  
+  
 }
+#cardOne {
+  border-right : 10px solid yellowgreen;
+}
+#cardTwo {
+  border-right : 10px solid aquamarine;
+}
+#cardThree {
+  border-right : 10px solid rosybrown;
+  box-shadow: 0px 3px #13121240;
+}
+// .cardThree {
+//   border-top-left-radius: 25px;
+//   border-bottom-left-radius: 25px;
+//   border-right : 8px solid red;
+// }
 .time {
   float: right
 }
 .cardStyling {
-  padding: 20px;
+  // padding: 20px;
 
 }
 .card-link {
@@ -46,6 +64,7 @@ div
   padding-right: 20px;
   padding-left: 0px !important;
   padding-top: 0px;
+  color: #32414F !important;
 }
 
 .card-body {
@@ -148,5 +167,9 @@ ion-datetime {
 }
 .menuButton {
   color: white;
+}
+
+ion-content {
+  background-color: #f0f2f6 !important;
 }
 

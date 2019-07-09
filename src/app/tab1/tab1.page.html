@@ -19,19 +19,32 @@
     </ion-title>
   </ion-toolbar>
   <div class="forDate">
-      <ion-icon name="ios-arrow-back" class="arrow-left"></ion-icon>
+      <ion-icon name="ios-arrow-back" class="arrow-left" (click) = "slidePrev()" ></ion-icon>
      <ion-item lines="none">
         
         <ion-datetime class="dateField"
            [(ngModel)] = 'today'
         
-          displayFormat="DDD MMM D"
+          display-format="DDD MMM D"
+          picker-format="DD/MMM/YYYY"
 
          ></ion-datetime>
+         <!-- <ion-buttons text-center>
+            [(ngModel)] = 'date'
+            <button clear style="background-color:#f6f7f8" icon-left (click)="showDatePicker()">
+            <ion-icon name="calendar">
+            </ion-icon>
+            </button>
+            </ion-buttons> -->
+            <!-- <ion-item>
+                <ion-label floating>Date</ion-label>
+                <ion-input type="date" (input)="date = $event.target.value"></ion-input>
+              </ion-item> -->
           <ion-label><img src="../../assets/images/date_icon.png"  width="20" height="20" ></ion-label>
+          <ion-icon name="ios-arrow-forward" class="arrow-right"></ion-icon>
         </ion-item>
         <!-- <ion-icon name="ios-arrow-forward" class="arrow-right"></ion-icon> -->
-
+       
 
   </div>
 </ion-header>
@@ -51,7 +64,7 @@
   <div class="cardStyling">
     <div class="container">
   <div id="accordion">
-    <div class="card">
+    <div class="card" id="cardOne">
       
       
       
@@ -69,11 +82,11 @@
               <span>
                   <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
                   
-                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+                  <img src="../../assets/images/android/icon-in-patient-admitted.png"  width="20" height="20" class="iconPosition"> 
 
-                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+                  <img src="../../assets/images/android/icon-clinical-directive.png"  width="20" height="20" class="iconPosition"> 
 
-                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+                  <img src="../../assets/images/android/icon-infection-type.png"  width="20" height="20" class="iconPosition"> 
               </span>
           </div>
           <div class="departmentDiv">
@@ -90,13 +103,13 @@
     </div>
 
     <!-- Second Card -->
-    <div class="card">
+    <div class="card" id="cardTwo">
       
       
       
         <a class="card-link" data-toggle="collapse" href="#collapseTwo" id="cardCollapseTwo">
             <span class="text-left" style="float: left ; margin-left: 0">
-                <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50"> 
+                <img src="../../assets/patient2.png" class="rounded-circle pro-pic" width="50" height="50"> 
             </span>
          <span class="cardActivityName "  >Prostate Implant</span> <span class="time"> 1:17 pm</span> <br>Sammy Hypia
         </a>
@@ -104,7 +117,7 @@
           <div class="card-body">
             <div style="padding-left: 54px ; padding-top: 2px" >
               <p>auto321221
-              <br> 3 May 1984 <span class="age"> (F/35)</span> <p>
+              <br> 3 May 1974 <span class="age"> (F/55)</span> <p>
                 <!-- <span>
                     <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
                     
@@ -134,35 +147,37 @@
 
 
          <!-- third Card -->
-         <div class="card">
+         <div class="card" id="cardThree">
       
       
       
             <a class="card-link" data-toggle="collapse" href="#collapseThree" id="cardCollapseThree">
                 <span class="text-left" style="float: left ; margin-left: 0">
-                    <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50"> 
+                    <img src="../../assets/patient1.png" class="rounded-circle pro-pic" width="50" height="50"> 
                 </span>
-             <span class="cardActivityName "  >Consult 40 min</span> <span class="time"> 4:14 pm</span> <br>test11a 
+             <span class="cardActivityName "  >Final Treatment</span> <span class="time"> 11:48 pm</span> <br>John D
             </a>
             <div id="collapseThree" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
               <div class="card-body">
                 <div style="padding-left: 54px ; padding-top: 2px" >
-                  <p>JD123
-                  <br> Mar 1994 <span class="age"> (M/71)</span> <p>
+                  <p>JD9011
+                  <br>2 Feb 1993 <span class="age"> (M/26)</span> <p>
                     <span>
-                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
+                        <img src="../../assets/images/android/icon-infection-type.png"  width="20" height="20" > 
+                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition" > 
+                     
+      
                         
-                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
-      
-                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
-      
-                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
                     </span>
                 </div>
                 <div class="departmentDiv">
                   <p class="departmentHeading"> Department:</p>
                   <span>Radition Oncology</span>
                 </div>
+                <div class="departmentDiv">
+                    <p class="departmentHeading"> Notes:</p>
+                    <span>other</span>
+                  </div>
                 <div>
       
                
