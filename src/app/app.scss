@@ -4,3 +4,44 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+// App Styles
+// ----------------------------------------------------------------------------
+// Put style rules here that you want to apply to the entire application. These 
+// styles are for the entire app and not just one component. Additionally, this 
+// file can hold Sass mixins, functions, and placeholder classes to be imported 
+// and used throughout the application.
+// @font-face {
+//     font-family: 'Roboto-italic';
+//     src: url(../assets/fonts/Roboto-Italic.ttf) format("ttf");
+//     font-weight: 200;
+//     font-style: italic;
+//     }
+//     @font-face {
+//         font-family: 'Roboto-regular';
+//         src: url(../assets/fonts/Roboto-Regular.ttf) format("ttf");
+//         font-weight: 200;
+//         font-style: normal;
+//         }
+    
+//     body {
+//         font-family: Roboto-italic !important;
+//     }
+span.action-sheet-button-inner.sc-ion-action-sheet-md {
+    justify-content: center;
+    color: #72AADc;
+}
+
+.actionButton
+{
+    border-top: solid 0.25px #f1eded !important;
+}
+
+.cancelButton
+{
+    border-top: 7px solid #d2d2d2 !important; 
+}
+ion-label#ion-dt-0-lbl {
+    margin-top: 5px !important;
+}
+

@@ -1,4 +1,152 @@
+span
+{
+  font-family: Roboto-italic !important;
+}
+div
+{
+  font-family: Roboto-italic !important;
+}
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
 }
+
+.new-background-color{
+   --background: #32414F;
+
+}
+.new-color {
+  --color : #ffffff;
+  // align : "center"
+}
+.forDate {
+  padding: 15px;
+ 
+}
+
+.cardContent {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.card {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.time {
+  float: right
+}
+.cardStyling {
+  padding: 20px;
+
+}
+.card-link {
+  // padding: 20px;
+  // padding-left: 6px !important;
+  padding-right: 20px;
+  padding-left: 0px !important;
+  padding-top: 0px;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0rem !important;
+}
+ion-title.new-color.md.title-md.hydrated {
+  
+  margin-left: 5px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+span.appText {
+  vertical-align: text-bottom;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Roboto-regular' !important;
+}
+
+.iconPosition {
+  margin-left: 13px;
+}
+.departmentHeading {
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.departmentDiv {
+  margin-left: 15px;
+}
+
+.button {
+float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.action-sheet-button-inner.sc-ion-action-sheet-md {
+  justify-content: center;
+  color: blue;
+}
+ion-datetime {
+  width: 35% !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 25%;
+}
+.forDate
+{
+  text-align: center;
+  padding: 0%;
+}
+.btn-primary {
+ background-color: #dadada !important;
+ border-color: #dadada !important;
+}
+
+.pro-pic {
+  margin-right: 10px;
+}
+
+.action-btn {
+  margin: 10px;
+  color: black;
+}
+
+.plus-ico
+{
+    float: left;
+    margin: 6px;
+}
+.calender-sub {
+  margin: 5px;
+}
+.cal-left
+{
+  float: left;
+  margin-right: 20px;
+  color: #2198ff;
+  font-size: 13px;
+  font-weight: 500;
+  
+}
+.arrow-left
+{
+  float: left;
+  width: 25px;
+  color: #007cbb;
+  height: 50px;
+  
+}
+
+.arrow-right
+{
+  float: right;
+  width: 25px;
+  color: #007cbb;
+  height: 50px;
+  display: inline-block;
+}
+.menuButton {
+  color: white;
+}
+

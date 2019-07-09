@@ -1,41 +1,199 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
+
+<ion-header >
+  
+  <ion-toolbar class="new-background-color">
+      <ion-buttons slot="end">
+          <ion-menu-button class="menuButton"></ion-menu-button>
+          </ion-buttons>
+      
+    <ion-title class = "new-color"  align = "center" >
+        <ion-icon  name="add-circle-outline" class = "other plus-ico" ></ion-icon>
+        <span class="appText">
+          Appointments
+        </span >
+       
+        <!-- <span style="float: right" >
+          <img src="../../assets/images/hamburger.png"  width="30" height="30" > 
+        </span> -->
+ 
     </ion-title>
   </ion-toolbar>
+  <div class="forDate">
+      <ion-icon name="ios-arrow-back" class="arrow-left"></ion-icon>
+     <ion-item lines="none">
+        
+        <ion-datetime class="dateField"
+           [(ngModel)] = 'today'
+        
+          displayFormat="DDD MMM D"
+
+         ></ion-datetime>
+          <ion-label><img src="../../assets/images/date_icon.png"  width="20" height="20" ></ion-label>
+        </ion-item>
+        <!-- <ion-icon name="ios-arrow-forward" class="arrow-right"></ion-icon> -->
+
+
+  </div>
 </ion-header>
 
+
+
+ 
+
+
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+  <div class="calender-sub">
+    <span class="cal-left">Calender View</span>
+    <span style="text-align: center;display: inline-block;">My Schedule <ion-icon ios="ios-search" md="md-search"></ion-icon></span>
+
+  </div>
+ 
+  <div class="cardStyling">
+    <div class="container">
+  <div id="accordion">
+    <div class="card">
+      
+      
+      
+      <a class="card-link" data-toggle="collapse" href="#collapseOne" id="cardCollapse">
+          <span class="text-left" style="float: left ; margin-left: 0">
+              <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50"> 
+          </span>
+       <span class="cardActivityName "  >Consult 40 min</span> <span class="time"> 4:14 pm</span> <br>test11a 
+      </a>
+      <div id="collapseOne" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">
+        <div class="card-body">
+          <div style="padding-left: 54px ; padding-top: 2px" >
+            <p>JD123
+            <br> Mar 1994 <span class="age"> (M/71)</span> <p>
+              <span>
+                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
+                  
+                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+
+                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+
+                  <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+              </span>
+          </div>
+          <div class="departmentDiv">
+            <p class="departmentHeading"> Department:</p>
+            <span>Radition Oncology</span>
+          </div>
+          <div>
+
+         
+          <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn">Action</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="card">
+      
+      
+      
+        <a class="card-link" data-toggle="collapse" href="#collapseTwo" id="cardCollapseTwo">
+            <span class="text-left" style="float: left ; margin-left: 0">
+                <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50"> 
+            </span>
+         <span class="cardActivityName "  >Prostate Implant</span> <span class="time"> 1:17 pm</span> <br>Sammy Hypia
+        </a>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
+          <div class="card-body">
+            <div style="padding-left: 54px ; padding-top: 2px" >
+              <p>auto321221
+              <br> 3 May 1984 <span class="age"> (F/35)</span> <p>
+                <!-- <span>
+                    <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
+                    
+                    <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+  
+                    <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+  
+                    <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+                </span> -->
+            </div>
+            <div class="departmentDiv">
+              <p class="departmentHeading"> Department:</p>
+              <span>Radition Oncology</span>
+            </div>
+            <div class="departmentDiv">
+                <p class="departmentHeading"> Notes:</p>
+                <span>Test</span>
+              </div>
+            <div>
+  
+           
+            <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn">Action</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+         <!-- third Card -->
+         <div class="card">
+      
+      
+      
+            <a class="card-link" data-toggle="collapse" href="#collapseThree" id="cardCollapseThree">
+                <span class="text-left" style="float: left ; margin-left: 0">
+                    <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50"> 
+                </span>
+             <span class="cardActivityName "  >Consult 40 min</span> <span class="time"> 4:14 pm</span> <br>test11a 
+            </a>
+            <div id="collapseThree" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
+              <div class="card-body">
+                <div style="padding-left: 54px ; padding-top: 2px" >
+                  <p>JD123
+                  <br> Mar 1994 <span class="age"> (M/71)</span> <p>
+                    <span>
+                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" > 
+                        
+                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+      
+                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+      
+                        <img src="../../assets/images/allergy_flag.png"  width="20" height="20" class="iconPosition"> 
+                    </span>
+                </div>
+                <div class="departmentDiv">
+                  <p class="departmentHeading"> Department:</p>
+                  <span>Radition Oncology</span>
+                </div>
+                <div>
+      
+               
+                <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn">Action</button>
+              </div>
+              </div>
+            </div>
+          </div>
+    
+
+    </div>
+  
+ </div>
+
+  </div>
 </ion-content>
+<ion-menu side="end" menuId="first" content-id ="men-content">
+    <!-- <ion-header>
+    <ion-toolbar >
+    <ion-title> Menu</ion-title>
+    </ion-toolbar>
+    </ion-header> -->
+    <ion-content id="men-content">
+    <!-- <ion-list>
+     <ion-item>Menu Item</ion-item>
+    <ion-item>Menu Item</ion-item>
+    <ion-item>Menu Item</ion-item>
+    <ion-item>Menu Item</ion-item>
+    <ion-item>Menu Item</ion-item> --> 
+    <!-- </ion-list>
+    </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet> -->
+
