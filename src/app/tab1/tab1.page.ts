@@ -18,6 +18,7 @@ export class Tab1Page {
   newDate;
   constructor(public actionSheetController: ActionSheetController , private menu: MenuController , private datePicker: DatePicker) {
     this.today = new Date().toISOString();
+    
      console.log('today ' , this.today);
   }
   openFirst() {
@@ -26,7 +27,7 @@ export class Tab1Page {
   }
   
   slidePrev() {
-    this.today --;
+    this.today - 1;
     console.log('prev Date' , this.today)
   }
  
@@ -86,6 +87,7 @@ export class Tab1Page {
         date: new Date(),
         mode: 'date',
         titleText: 'set Date',
+        
         androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
       }).then(
         date => console.log('Got date: ', date),
@@ -93,4 +95,5 @@ export class Tab1Page {
       );
     
     }
+    
 }
