@@ -1,36 +1,36 @@
 <ion-header>
 
-  <ion-toolbar class="new-background-color">
-    <ion-buttons slot="end">
-      <ion-menu-button class="menuButton"></ion-menu-button>
-    </ion-buttons>
-    <ion-icon slot="start" name="add-circle-outline" class="other plus-ico" width="30px" height="30px"></ion-icon>
-    <ion-title class="new-color">
+    <ion-toolbar class="new-background-color">
+        <ion-buttons slot="end">
+            <ion-menu-button class="menuButton"></ion-menu-button>
+        </ion-buttons>
+        <ion-icon slot="start" name="add-circle-outline" class="other plus-ico" width="30px" height="30px"></ion-icon>
+        <ion-title class="new-color">
 
-      <span class="appText">
+            <span class="appText">
         Appointments
       </span>
 
 
 
-    </ion-title>
-  </ion-toolbar>
-  <div class="forDate">
-    <ion-buttons slot="start" id="left-arrow">
-      <ion-icon name="ios-arrow-back" style="font-size: 30px" (click)="removeDay(today)"></ion-icon>
-    </ion-buttons>
-    <span class="date" id="day">{{dateDay(today)}}</span>
-    <span class="date" id="mon">{{dateMonth(today)}}</span>
-    <span class="date" id="dateNum">{{today.getDate()}}</span>
-    <ion-buttons text-center class="calenderBtn">
-      <button clear style="background-color: transparent;" (click)="showDatePicker()">
+        </ion-title>
+    </ion-toolbar>
+    <div class="forDate">
+        <ion-buttons slot="start" id="left-arrow">
+            <ion-icon name="ios-arrow-back" style="font-size: 30px" (click)="removeDay(today)"></ion-icon>
+        </ion-buttons>
+        <span class="date" id="day">{{dateDay(today)}}</span>
+        <span class="date" id="mon">{{dateMonth(today)}}</span>
+        <span class="date" id="dateNum">{{today.getDate()}}</span>
+        <ion-buttons text-center class="calenderBtn">
+            <button clear style="background-color: transparent;" (click)="showDatePicker()">
         <img src="../../assets/images/date_icon.png" width="30" height="30">
       </button>
-    </ion-buttons>
-    <ion-buttons slot="end" id="right-arrow">
-      <ion-icon name="ios-arrow-forward" style="font-size: 30px" (click)="addDay(today)"></ion-icon>
-    </ion-buttons>
-  </div>
+        </ion-buttons>
+        <ion-buttons slot="end" id="right-arrow">
+            <ion-icon name="ios-arrow-forward" style="font-size: 30px" (click)="addDay(today)"></ion-icon>
+        </ion-buttons>
+    </div>
 </ion-header>
 
 
@@ -39,33 +39,33 @@
 
 
 <ion-content>
-  <div class="calender-sub">
-    <span class="cal-left">Calender View</span>
-    <span style="text-align: center;display: inline-block;">My Schedule <ion-icon ios="ios-search" md="md-search">
+    <div class="calender-sub">
+        <span class="cal-left">Calender View</span>
+        <span style="text-align: center;display: inline-block;">My Schedule <ion-icon ios="ios-search" md="md-search">
       </ion-icon></span>
 
-  </div>
+    </div>
 
-  <div class="cardStyling">
-    <div class="container">
-      <div id="accordion">
-        <div class="card" id="cardOne">
+    <div class="cardStyling">
+        <div class="container">
+            <div id="accordion">
+                <div class="card" id="cardOne">
 
 
 
-          <a class="card-link" data-toggle="collapse" href="#collapseOne" id="cardCollapse">
-            <span class="text-left" style="float: left ; margin-left: 0">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne" id="cardCollapse">
+                        <span class="text-left" style="float: left ; margin-left: 0">
               <img src="../../assets/patient.png" class="rounded-circle pro-pic" width="50" height="50">
             </span>
-            <span class="cardActivityName ">Consult 40 min</span> <span class="time"> 4:14 pm</span> <br>test11a
-          </a>
-          <div id="collapseOne" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">
-            <div class="card-body">
-              <div style="padding-left: 54px ; padding-top: 2px">
-                <p>JD123
-                  <br> Mar 1994 <span class="age"> (M/71)</span>
-                  <p>
-                    <span>
+                        <span class="cardActivityName ">Consult 40 min</span> <span class="time"> 4:14 pm</span> <br>test11a
+                    </a>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-body">
+                            <div style="padding-left: 54px ; padding-top: 2px">
+                                <p>JD123
+                                    <br> Mar 1994 <span class="age"> (M/71)</span>
+                                    <p>
+                                        <span>
                       <img src="../../assets/images/allergy_flag.png" width="20" height="20">
 
                       <img src="../../assets/images/android/icon-in-patient-admitted.png" width="20" height="20"
@@ -77,130 +77,123 @@
                       <img src="../../assets/images/android/icon-infection-type.png" width="20" height="20"
                         class="iconPosition">
                     </span>
-              </div>
-              <div class="departmentDiv">
-                <p class="departmentHeading"> Department:</p>
-                <span>Radition Oncology</span>
-              </div>
-              <div>
+                            </div>
+                            <div class="departmentDiv">
+                                <p class="departmentHeading"> Department:</p>
+                                <span>Radition Oncology</span>
+                            </div>
+                            <div>
 
 
-                <button ion-button (click)=" $event.preventDefault();presentActionSheet()"
-                  class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="true">Action</button>
-              </div>
-            </div>
-          </div>
-        </div>
+                                <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Second Card -->
-        <div class="card" id="cardTwo">
+                <!-- Second Card -->
+                <div class="card" id="cardTwo">
 
 
 
-          <a class="card-link" data-toggle="collapse" href="#collapseTwo" id="cardCollapseTwo">
-            <span class="text-left" style="float: left ; margin-left: 0">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo" id="cardCollapseTwo">
+                        <span class="text-left" style="float: left ; margin-left: 0">
               <img src="../../assets/patient2.png" class="rounded-circle pro-pic" width="50" height="50">
             </span>
-            <span class="cardActivityName ">Prostate Implant</span> <span class="time"> 1:17 pm</span> <br>Sammy Hypia
-          </a>
-          <div id="collapseTwo" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
-            <div class="card-body">
-              <div style="padding-left: 54px ; padding-top: 2px">
-                <p>auto321221
-                  <br> 3 May 1974 <span class="age"> (F/55)</span>
-                  <p>
+                        <span class="cardActivityName ">Prostate Implant</span> <span class="time"> 1:17 pm</span> <br>Sammy Hypia
+                    </a>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">
+                        <div class="card-body">
+                            <div style="padding-left: 54px ; padding-top: 2px">
+                                <p>auto321221
+                                    <br> 3 May 1974 <span class="age"> (F/55)</span>
+                                    <p>
 
-              </div>
-              <div class="departmentDiv">
-                <p class="departmentHeading"> Department:</p>
-                <span>Radition Oncology</span>
-              </div>
-              <div class="departmentDiv">
-                <p class="departmentHeading"> Notes:</p>
-                <span>Test</span>
-              </div>
-              <div>
-
-
-                <button ion-button (click)=" $event.preventDefault();presentActionSheet()"
-                  class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="true">Action</button>
-              </div>
-            </div>
-          </div>
-        </div>
+                            </div>
+                            <div class="departmentDiv">
+                                <p class="departmentHeading"> Department:</p>
+                                <span>Radition Oncology</span>
+                            </div>
+                            <div class="departmentDiv">
+                                <p class="departmentHeading"> Notes:</p>
+                                <span>Test</span>
+                            </div>
+                            <div>
 
 
-        <!-- third Card -->
-        <div class="card" id="cardThree">
+                                <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- third Card -->
+                <div class="card" id="cardThree">
 
 
 
-          <a class="card-link" data-toggle="collapse" href="#collapseThree" id="cardCollapseThree">
-            <span class="text-left" style="float: left ; margin-left: 0">
+                    <a class="card-link" data-toggle="collapse" href="#collapseThree" id="cardCollapseThree">
+                        <span class="text-left" style="float: left ; margin-left: 0">
               <img src="../../assets/patient1.png" class="rounded-circle pro-pic" width="50" height="50">
             </span>
-            <span class="cardActivityName ">Final Treatment</span> <span class="time"> 11:48 pm</span> <br>John D
-          </a>
-          <div id="collapseThree" class="collapse" data-parent="#accordion" data-toggle="collapse"
-            href="#collapseThree">
-            <div class="card-body">
-              <div style="padding-left: 54px ; padding-top: 2px">
-                <p>JD9011
-                  <br>2 Feb 1993 <span class="age"> (M/26)</span>
-                  <p>
-                    <span>
+                        <span class="cardActivityName ">Final Treatment</span> <span class="time"> 11:48 pm</span> <br>John D
+                    </a>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
+                        <div class="card-body">
+                            <div style="padding-left: 54px ; padding-top: 2px">
+                                <p>JD9011
+                                    <br>2 Feb 1993 <span class="age"> (M/26)</span>
+                                    <p>
+                                        <span>
                       <img src="../../assets/images/android/icon-infection-type.png" width="20" height="20">
                       <img src="../../assets/images/allergy_flag.png" width="20" height="20" class="iconPosition">
 
 
 
                     </span>
-              </div>
-              <div class="departmentDiv">
-                <p class="departmentHeading"> Department:</p>
-                <span>Radition Oncology</span>
-              </div>
-              <div class="departmentDiv">
-                <p class="departmentHeading"> Notes:</p>
-                <span>other</span>
-              </div>
-              <div>
+                            </div>
+                            <div class="departmentDiv">
+                                <p class="departmentHeading"> Department:</p>
+                                <span>Radition Oncology</span>
+                            </div>
+                            <div class="departmentDiv">
+                                <p class="departmentHeading"> Notes:</p>
+                                <span>other</span>
+                            </div>
+                            <div>
 
 
-                <button ion-button (click)=" $event.preventDefault();presentActionSheet()"
-                  class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="true">Action</button>
-              </div>
+                                <button ion-button (click)=" $event.preventDefault();presentActionSheet()" class="button btn btn-primary dropdown-toggle action-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
+
         </div>
 
-
-      </div>
-
     </div>
-
-  </div>
 </ion-content>
-<ion-menu side="end" menuId="first" content-id="men-content" class="my-custom-menu">
+<ion-menu side="end" menuId="first" content-id="men-content" class="my-custom-menu" type="overlay">
 
-  <ion-content id="men-content">
+    <ion-content id="men-content">
 
 
-    <div class="drowerItem">
-      <h3> Settings</h3>
-      <h3> Quick Tour</h3>
-      <h3> About</h3>
-      <h3> Contact Us</h3>
-      <h3> Legal</h3>
-      <h3> Privacy Policy</h3>
-      <h3>Switch to MedOnc</h3>
-      <h3> Switch User</h3>
-      <h3>other</h3>
-      <h2>Logout</h2>
-    </div>
+        <div class="drowerItem">
+            <h3> Settings</h3>
+            <h3> Quick Tour</h3>
+            <h3> About</h3>
+            <h3> Contact Us</h3>
+            <h3> Legal</h3>
+            <h3> Privacy Policy</h3>
+            <h3>Switch to MedOnc</h3>
+            <h3> Switch User</h3>
+            <h3>other</h3>
+            <h2>Logout</h2>
+        </div>
 
-  </ion-content>
+    </ion-content>
 </ion-menu>
