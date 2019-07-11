@@ -16,8 +16,11 @@ import { DatePicker } from '@ionic-native/date-picker/ngx';
 export class Tab1Page {
   today;
   newDate;
+  monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+"JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   constructor(public actionSheetController: ActionSheetController , private menu: MenuController , private datePicker: DatePicker) {
-    this.today = new Date().toISOString();
+    this.today = new Date();
     
      console.log('today ' , this.today);
   }
@@ -70,30 +73,33 @@ export class Tab1Page {
     
   }
 
-
   showDatePicker(){
     this.datePicker.show({
-    date: new Date(),
+    date: this.today,
     mode: 'date',
-    androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+    androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, 
     }).then(
-    date => console.log('Got date: ', date),
+    date => this.today = date,
     err => console.log('Error occurred while getting date: ', err)
     );
     }
-    showCalendar() {
-
-      this.datePicker.show({
-        date: new Date(),
-        mode: 'date',
-        titleText: 'set Date',
-        
-        androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
-      }).then(
-        date => console.log('Got date: ', date),
-        err => console.log('Error occurred while getting date: ', err)
-      );
-    
+    dateMonth(date)
+    {
+    return this.monthNames[date.getMonth()];
     }
-    
+    dateDay(date)
+    {
+    return this.weekdays[date.getDay()];
+    }
+ 
+    addDay(date)
+{
+date = date.setDate(date.getDate()+1);
+// console.log(date);
+}
+removeDay(date)
+{
+date = date.setDate(date.getDate()-1);
+// console.log(date);
+}
 }

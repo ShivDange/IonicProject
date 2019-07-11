@@ -169,7 +169,85 @@ ion-datetime {
   color: white;
 }
 
-ion-content {
-  background-color: #f0f2f6 !important;
+// ion-content {
+//   background-color: #f0f2f6 !important;
+// }
+
+// span#dateNum {
+//   font-size: 32px;
+//   vertical-align: middle;
+//   font-weight: 600;
+//   color: #4b4b4b;
+//   }
+//   span#mon {
+//   font-size: 23px;
+//   vertical-align: text-top;
+//   color: #4b4b4b;
+//   }
+//   span#day {
+//   font-size: 22px;
+//   vertical-align: text-top;
+//   font-weight: 600;
+//   color: #4b4b4b;
+//   }
+  
+  #left-arrow
+  {
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+  color: #007cbb;
+  }
+  #right-arrow
+  {
+  display: inline-block;
+  float: right;
+  margin-top: 8px;
+  color: #007cbb;
+  }
+  .date
+{
+margin: 5px;
+text-align: center;
+font-family: sans-serif;
+}
+// .calenderBtn
+// {
+// margin: 0 auto;
+// display: inline-block;
+// }
+
+.calenderBtn
+{
+margin: 0px auto;
+display: inline-block;
+/* margin-bottom: 0px; */
+vertical-align: text-bottom;
+margin-top: 6px;
+}
+
+span#dateNum {
+font-size: 32px;
+/* vertical-align: middle; */
+font-weight: 600;
+color: #4b4b4b;
+}
+span#mon {
+font-size: 26px;
+/* vertical-align: unset; */
+color: #4b4b4b;
+}
+span#day {
+font-size: 23px;
+/* vertical-align: middle; */
+font-weight: 600;
+color: #4b4b4b;
+}
+
+.drowerItem {
+  color: #007cbb;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 250px;
 }
 

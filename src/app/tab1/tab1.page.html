@@ -19,34 +19,21 @@
     </ion-title>
   </ion-toolbar>
   <div class="forDate">
-      <ion-icon name="ios-arrow-back" class="arrow-left" (click) = "slidePrev()" ></ion-icon>
-     <ion-item lines="none">
-        
-        <ion-datetime class="dateField"
-           [(ngModel)] = 'today'
-        
-          display-format="DDD MMM D"
-          picker-format="DD/MMM/YYYY"
-
-         ></ion-datetime>
-         <!-- <ion-buttons text-center>
-            [(ngModel)] = 'date'
-            <button clear style="background-color:#f6f7f8" icon-left (click)="showDatePicker()">
-            <ion-icon name="calendar">
-            </ion-icon>
-            </button>
-            </ion-buttons> -->
-            <!-- <ion-item>
-                <ion-label floating>Date</ion-label>
-                <ion-input type="date" (input)="date = $event.target.value"></ion-input>
-              </ion-item> -->
-          <ion-label><img src="../../assets/images/date_icon.png"  width="20" height="20" ></ion-label>
-          <ion-icon name="ios-arrow-forward" class="arrow-right"></ion-icon>
-        </ion-item>
-        <!-- <ion-icon name="ios-arrow-forward" class="arrow-right"></ion-icon> -->
-       
-
-  </div>
+    <ion-buttons slot="start" id="left-arrow">
+    <ion-icon name="ios-arrow-back" style="font-size: 30px" (click)="removeDay(today)"></ion-icon>
+    </ion-buttons>
+    <span class="date" id="day">{{dateDay(today)}}</span>
+    <span class="date" id="mon">{{dateMonth(today)}}</span>
+    <span class="date" id="dateNum">{{today.getDate()}}</span>
+    <ion-buttons text-center class="calenderBtn">
+    <button clear style="background-color: transparent;" (click)="showDatePicker()">
+    <img src="../../assets/images/date_icon.png" width="30" height="30" >
+    </button>
+    </ion-buttons>
+    <ion-buttons slot="end" id="right-arrow">
+    <ion-icon name="ios-arrow-forward" style="font-size: 30px" (click)="addDay(today)"></ion-icon>
+    </ion-buttons>
+    </div>
 </ion-header>
 
 
@@ -206,9 +193,24 @@
     <ion-item>Menu Item</ion-item>
     <ion-item>Menu Item</ion-item>
     <ion-item>Menu Item</ion-item>
-    <ion-item>Menu Item</ion-item> --> 
-    <!-- </ion-list>
+    <ion-item>Menu Item</ion-item> 
+    < </ion-list>
     </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet> -->
-
+    
+<div class="drowerItem">
+  <h3> Settings</h3>
+    <h3>  Quick Tour</h3>
+    <h3> About</h3>
+    <h3> Contact Us</h3>
+    <h3> Legal</h3>
+    <h3> Privacy Policy</h3>
+     <h3>Switch to MedOnc</h3>
+     <h3> Switch User</h3>
+     <h3>other</h3>
+     <h2>Logout</h2>
+</div>
+    
+    </ion-content>
+    </ion-menu>
