@@ -1,253 +1,225 @@
-// span
-// {
-//   font-family: Roboto-italic !important;
-// }
-// div
-// {
-//   font-family: Roboto-italic !important;
-// }
 .welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+    max-height: 35vh;
+    overflow: hidden;
 }
 
-.new-background-color{
-   --background: #32414F;
-
+.new-background-color {
+    --background: #32414F;
 }
+
 .new-color {
-  --color : #ffffff;
-  // align : "center"
+    --color: #ffffff;
 }
+
 .forDate {
-  padding: 15px;
- 
+    padding: 15px;
 }
 
 .cardContent {
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .card {
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  
-  
-  
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
-#cardOne {
-  border-right : 10px solid yellowgreen;
-}
-#cardTwo {
-  border-right : 10px solid aquamarine;
-}
-#cardThree {
-  border-right : 10px solid rosybrown;
-  box-shadow: 0px 3px #13121240;
-}
-// .cardThree {
-//   border-top-left-radius: 25px;
-//   border-bottom-left-radius: 25px;
-//   border-right : 8px solid red;
-// }
-.time {
-  float: right
-}
-.cardStyling {
-  // padding: 20px;
 
+#cardOne {
+    border-right: 10px solid yellowgreen;
 }
+
+#cardTwo {
+    border-right: 10px solid aquamarine;
+}
+
+#cardThree {
+    border-right: 10px solid rosybrown;
+    box-shadow: 0px 3px #13121240;
+}
+
+.time {
+    float: right
+}
+
 .card-link {
-  // padding: 20px;
-  // padding-left: 6px !important;
-  padding-right: 20px;
-  padding-left: 0px !important;
-  padding-top: 0px;
-  color: #32414F !important;
+    padding-right: 20px;
+    padding-left: 0px !important;
+    padding-top: 0px;
+    color: #32414F !important;
 }
 
 .card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 0rem !important;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0rem !important;
 }
+
 ion-title.new-color.md.title-md.hydrated {
-  
-  margin-left: 5px;
-  padding-left: 0px;
-  text-align: center;
+    margin-left: 5px;
+    padding-left: 0px;
+    text-align: center;
 }
 
 span.appText {
-  vertical-align: text-bottom;
-  display: inline-block;
-  text-align: center;
-  font-family: 'Roboto-regular' !important;
+    vertical-align: text-bottom;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto-regular' !important;
 }
 
 .iconPosition {
-  margin-left: 13px;
+    margin-left: 13px;
 }
+
 .departmentHeading {
-  font-weight: 100;
-  margin-bottom: 0;
+    font-weight: 100;
+    margin-bottom: 0;
 }
+
 .departmentDiv {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 .button {
-float: right;
+    float: right;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 span.action-sheet-button-inner.sc-ion-action-sheet-md {
-  justify-content: center;
-  color: blue;
+    justify-content: center;
+    color: blue;
 }
+
 ion-datetime {
-  width: 35% !important;
-  text-align: center;
-  text-transform: uppercase;
-  margin-left: 25%;
+    width: 35% !important;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 25%;
 }
-.forDate
-{
-  text-align: center;
-  padding: 0%;
+
+.forDate {
+    text-align: center;
+    padding: 0%;
+    background-color: #f0f2f6 !important;
 }
+
 .btn-primary {
- background-color: #dadada !important;
- border-color: #dadada !important;
+    background-color: #dadada !important;
+    border-color: #dadada !important;
 }
 
 .pro-pic {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .action-btn {
-  margin: 10px;
-  color: black;
+    margin: 10px;
+    color: black;
 }
 
-.plus-ico
-{
-    float: left;
+.plus-ico {
     margin: 6px;
+    width: 24px;
+    color: white;
+    height: 24px;
 }
+
 .calender-sub {
-  margin: 5px;
-}
-.cal-left
-{
-  float: left;
-  margin-right: 20px;
-  color: #2198ff;
-  font-size: 13px;
-  font-weight: 500;
-  
-}
-.arrow-left
-{
-  float: left;
-  width: 25px;
-  color: #007cbb;
-  height: 50px;
-  
+    padding: 7px;
 }
 
-.arrow-right
-{
-  float: right;
-  width: 25px;
-  color: #007cbb;
-  height: 50px;
-  display: inline-block;
+.cal-left {
+    float: left;
+    margin-right: 20px;
+    color: #2198ff;
+    font-size: 13px;
+    font-weight: 500;
 }
+
+.arrow-left {
+    float: left;
+    width: 25px;
+    color: #007cbb;
+    height: 50px;
+}
+
+.arrow-right {
+    float: right;
+    width: 25px;
+    color: #007cbb;
+    height: 50px;
+    display: inline-block;
+}
+
 .menuButton {
-  color: white;
+    color: white;
 }
 
-// ion-content {
-//   background-color: #f0f2f6 !important;
-// }
-
-// span#dateNum {
-//   font-size: 32px;
-//   vertical-align: middle;
-//   font-weight: 600;
-//   color: #4b4b4b;
-//   }
-//   span#mon {
-//   font-size: 23px;
-//   vertical-align: text-top;
-//   color: #4b4b4b;
-//   }
-//   span#day {
-//   font-size: 22px;
-//   vertical-align: text-top;
-//   font-weight: 600;
-//   color: #4b4b4b;
-//   }
-  
-  #left-arrow
-  {
-  display: inline-block;
-  float: left;
-  margin-top: 8px;
-  color: #007cbb;
-  }
-  #right-arrow
-  {
-  display: inline-block;
-  float: right;
-  margin-top: 8px;
-  color: #007cbb;
-  }
-  .date
-{
-margin: 5px;
-text-align: center;
-font-family: sans-serif;
+#left-arrow {
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+    color: #007cbb;
 }
-// .calenderBtn
-// {
-// margin: 0 auto;
-// display: inline-block;
-// }
 
-.calenderBtn
-{
-margin: 0px auto;
-display: inline-block;
-/* margin-bottom: 0px; */
-vertical-align: text-bottom;
-margin-top: 6px;
+#right-arrow {
+    display: inline-block;
+    float: right;
+    margin-top: 8px;
+    color: #007cbb;
+}
+
+.date {
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.calenderBtn {
+    margin: 0px auto;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-top: 6px;
 }
 
 span#dateNum {
-font-size: 32px;
-/* vertical-align: middle; */
-font-weight: 600;
-color: #4b4b4b;
+    font-size: 32px;
+    font-weight: 600;
+    color: #4b4b4b;
 }
+
 span#mon {
-font-size: 26px;
-/* vertical-align: unset; */
-color: #4b4b4b;
+    font-size: 26px;
+    color: #4b4b4b;
 }
+
 span#day {
-font-size: 23px;
-/* vertical-align: middle; */
-font-weight: 600;
-color: #4b4b4b;
+    font-size: 23px;
+    font-weight: 600;
+    color: #4b4b4b;
 }
 
 .drowerItem {
-  color: #007cbb;
-  padding-left: 40px;
-  padding-top: 80px;
-  padding-bottom: 250px;
+    color: #007cbb;
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-bottom: 250px;
 }
 
+ion-content {
+    --ion-background-color: #f0f2f6 !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+ion-tabbs {
+    background-color: white !important;
+}
+
+// .my-custom-menu {
+//     --width: 250px;
+// }
