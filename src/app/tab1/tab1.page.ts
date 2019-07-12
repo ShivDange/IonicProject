@@ -83,19 +83,9 @@ export class Tab1Page {
       err => console.log('Error occurred while getting date: ', err)
     );
   }
-  dateMonth(date) {
-    return this.monthNames[date.getMonth()];
-  }
-  dateDay(date) {
-    return this.weekdays[date.getDay()];
-  }
-
-  addDay(date) {
-    date = date.setDate(date.getDate() + 1);
-    // console.log(date);
-  }
-  removeDay(date) {
-    date = date.setDate(date.getDate() - 1);
-    // console.log(date);
-  }
+  // 
+  dateMonth = (date) => this.monthNames[date.getMonth()];
+  dateDay = (date) => this.weekdays[date.getDay()];
+  addDay = (date) => date = date.setDate(date.getDate() + 1);
+  removeDay = (date) => date = date.setDate(date.getDate() - 1);
 }
