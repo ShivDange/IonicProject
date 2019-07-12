@@ -39,8 +39,8 @@ export class Tab1Page {
 
       buttons: [{
         text: 'Mark completed',
-        role: 'destructive',
-        // cssClass: 'actionButton',
+        // role: 'destructive',
+         cssClass: 'actionButton',
 
         handler: () => {
           console.log('Delete clicked');
