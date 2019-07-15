@@ -4,7 +4,6 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
-
 // App Styles
 // ----------------------------------------------------------------------------
 // Put style rules here that you want to apply to the entire application. These 
@@ -23,7 +22,6 @@
 //         font-weight: 200;
 //         font-style: normal;
 //         }
-    
 //     body {
 //         font-family: Roboto-italic !important;
 //     }
@@ -32,21 +30,21 @@ span.action-sheet-button-inner.sc-ion-action-sheet-md {
     color: #72AADc;
 }
 
-.actionButton
-{
+.actionButton {
     border-top: solid 0.25px #f1eded !important;
 }
 
-.cancelButton
-{
-    border-top: 7px solid #d2d2d2 !important; 
+.cancelButton {
+    border-top: 7px solid #d2d2d2 !important;
 }
+
 ion-label#ion-dt-0-lbl {
     margin-top: 5px !important;
 }
+
 // body {
 //     background-color: #f0f2f6 !important;
 // }
-
-
-
+button:focus {
+    outline: none !important;
+}

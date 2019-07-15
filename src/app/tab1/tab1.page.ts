@@ -62,11 +62,12 @@ export class Tab1Page {
         text: 'Cancel',
         cssClass: 'cancelButton',
 
-        role: 'cancel',
+        // role: 'cancel',
         handler: () => {
           console.log('Cancel clicked');
         }
-      }]
+      }],
+      
     });
 
     await actionSheet.present();
