@@ -221,3 +221,12 @@ ion-tabbs {
 // .my-custom-menu {
 //     --width: 250px;
 // }
+.btn-primary ::after {
+    outline: none !important;
+    border: none !important;
+}
+
+.dropdown-toggle:focus {
+    outline: none!important;
+    box-shadow: none !important;
+}
