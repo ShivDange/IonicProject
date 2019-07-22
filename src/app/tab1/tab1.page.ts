@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ActionSheetController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
 import { DatePicker } from '@ionic-native/date-picker/ngx';
+import { HttpClient } from '@angular/common/http';
+
 
 
 
@@ -19,11 +21,17 @@ export class Tab1Page {
   monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
     "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
   weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-  constructor(public actionSheetController: ActionSheetController, private menu: MenuController, private datePicker: DatePicker) {
+  constructor(public actionSheetController: ActionSheetController, private menu: MenuController, private datePicker: DatePicker, private http: HttpClient) {
+     this.http.get('https://172.31.3.38:8000/appointments').subscribe((response) => {
+      // this.http.get('http://dummy.restapiexample.com/api/v1/employees').subscribe((response) => {
+    console.log(response);
+});
     this.today = new Date();
 
     console.log('today ', this.today);
   }
+
+  
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
