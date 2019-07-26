@@ -32,7 +32,7 @@
     "cordova-plugin-datepicker": "^0.9.3",
     "cordova-windows": "7.0.0",
     "core-js": "^2.5.4",
-    "rxjs": "~6.5.1",
+    "rxjs": "^6.5.2",
     "rxjs-observable": "0.0.7",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.29"
